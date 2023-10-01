@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body align="middle">
+    <h1>HTML Form</h1>
+    <form action="submit.html" method="get">
+      <div>
+        <label for="name">Enter Your Name:</label>
+        <input type="text" name="name" id="name" placeholder="Full Name" />
+      </div>
+      <br />
+      <div>
+        <label for="number">Mobile Number:</label>
+        <input type="number" name="number" id="number" maxlength="10" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Enter Your Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="abc@gmail.com"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="Password" id="password" required />
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+      <br />
+      <div>
+        Gender:
+        <label for="male"></label>
+        <input type="radio" name="male" id="gender" />Male
+
+        <label for="female"></label>
+        <input type="radio" name="female" id="gender" />Female
+        <label for="others"></label>
+        <input type="radio" name="others" id="gender" />Others
+      </div>
+      <br />
+      <div>
+        <label for="relegion">Religion:</label>
+        <select id="religion" name="Religion">
+          <option value="OC">OC</option>
+          <option value="BC">BC</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="bio">Bio:</label>
+        <textarea
+          name="bio"
+          id="bio"
+          cols="30"
+          rows="1"
+          placeholder="Tell me about yourself:"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
